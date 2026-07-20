@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://musawwer.is-a.dev/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://musawwer.is-a.dev/blog/" rel="alternate" type="text/html" /><updated>2026-07-21T01:04:13+05:00</updated><id>https://musawwer.is-a.dev/blog/feed.xml</id><title type="html">Musawwer’s Blog</title><subtitle>Thoughts on Flutter, mobile development, UI design and software engineering.</subtitle><author><name>Musawwer Rasheed</name></author><entry><title type="html">Why I Built My Portfolio with Flutter Web</title><link href="https://musawwer.is-a.dev/blog/why-i-built-my-portfolio-with-flutter-web/" rel="alternate" type="text/html" title="Why I Built My Portfolio with Flutter Web" /><published>2026-07-21T00:00:00+05:00</published><updated>2026-07-21T00:00:00+05:00</updated><id>https://musawwer.is-a.dev/blog/why-i-built-my-portfolio-with-flutter-web</id><content type="html" xml:base="https://musawwer.is-a.dev/blog/why-i-built-my-portfolio-with-flutter-web/"><![CDATA[<p>When I decided to build my personal portfolio, I had plenty of options — plain HTML/CSS, React, Next.js, Astro. I picked <strong>Flutter Web</strong>, and I’d make the same choice again.</p>
+
+<h2 id="why-flutter">Why Flutter?</h2>
+
+<p>I’m a Flutter developer by trade. Writing my portfolio in the same framework I use daily meant I could move fast, reuse patterns I already know, and showcase <em>Flutter itself</em> as a skill right inside the portfolio.</p>
+
+<h2 id="what-actually-impressed-me">What Actually Impressed Me</h2>
+
+<p><strong>Pixel-perfect design across platforms.</strong> Flutter renders on a canvas — no browser quirks, no inconsistent CSS box models. What you see in your editor is what your visitors see.</p>
+
+<p><strong>Animations are first-class.</strong> The <code class="language-plaintext highlighter-rouge">AnimationController</code> API is expressive enough that I could add the rotating ring, fade-in hero, and skill bar animations without reaching for a single external library.</p>
+
+<p><strong>Responsive layout is straightforward.</strong> With <code class="language-plaintext highlighter-rouge">LayoutBuilder</code> and custom breakpoints, adapting the UI from mobile to desktop took minutes, not hours.</p>
+
+<h2 id="the-challenges">The Challenges</h2>
+
+<p>Flutter Web’s biggest weakness is <strong>SEO</strong>. The app renders inside a <code class="language-plaintext highlighter-rouge">&lt;canvas&gt;</code> element — search engine crawlers can’t index your text content easily. That’s exactly why this blog exists separately, as a plain Jekyll site. Important content lives here where Google can read it.</p>
+
+<p>Initial load time is another trade-off. The Wasm/CanvasKit bundle is large. I mitigate this with a loading screen, but it’s something to be aware of.</p>
+
+<h2 id="the-verdict">The Verdict</h2>
+
+<p>For a developer portfolio where you want to <strong>demonstrate Flutter skill</strong> and <strong>wow visitors visually</strong>, Flutter Web is a fantastic choice. Pair it with a statically-generated blog (like this one!) for SEO content, and you get the best of both worlds.</p>
+
+<hr />
+
+<p><em>Have questions about Flutter Web? Reach out at <a href="https://musawwer.is-a.dev">musawwer.is-a.dev</a> or open an issue on my GitHub.</em></p>]]></content><author><name>Musawwer Rasheed</name></author><category term="Flutter" /><category term="Web" /><category term="Portfolio" /><summary type="html"><![CDATA[When I decided to build my personal portfolio, I had plenty of options — plain HTML/CSS, React, Next.js, Astro. I picked Flutter Web, and I’d make the same choice again.]]></summary></entry></feed>

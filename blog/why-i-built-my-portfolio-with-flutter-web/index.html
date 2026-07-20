@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why I Built My Portfolio with Flutter Web — Musawwer's Blog</title>
+  <meta name="description" content="When I decided to build my personal portfolio, I had plenty of options — plain HTML/CSS, React, Next.js, Astro. I picked Flutter Web, and I’d make the same c..." />
+  <link rel="stylesheet" href="/blog/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/blog/" class="site-title">Musawwer's Blog</a>
+      <nav class="site-nav">
+        <a href="/blog/">Posts</a>
+        <a href="https://musawwer.is-a.dev">Portfolio →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2026-07-21T00:00:00+05:00">July 21, 2026</time>
+      
+        <span class="post-tags">
+          
+            <span class="tag">Flutter</span>
+          
+            <span class="tag">Web</span>
+          
+            <span class="tag">Portfolio</span>
+          
+        </span>
+      
+    </div>
+    <h1 class="post-title">Why I Built My Portfolio with Flutter Web</h1>
+    
+      <p class="post-subtitle">A deep dive into Flutter Web for portfolio sites — what works, what doesn't, and what surprised me.</p>
+    
+  </header>
+
+  <div class="post-content">
+    <p>When I decided to build my personal portfolio, I had plenty of options — plain HTML/CSS, React, Next.js, Astro. I picked <strong>Flutter Web</strong>, and I’d make the same choice again.</p>
+
+<h2 id="why-flutter">Why Flutter?</h2>
+
+<p>I’m a Flutter developer by trade. Writing my portfolio in the same framework I use daily meant I could move fast, reuse patterns I already know, and showcase <em>Flutter itself</em> as a skill right inside the portfolio.</p>
+
+<h2 id="what-actually-impressed-me">What Actually Impressed Me</h2>
+
+<p><strong>Pixel-perfect design across platforms.</strong> Flutter renders on a canvas — no browser quirks, no inconsistent CSS box models. What you see in your editor is what your visitors see.</p>
+
+<p><strong>Animations are first-class.</strong> The <code class="language-plaintext highlighter-rouge">AnimationController</code> API is expressive enough that I could add the rotating ring, fade-in hero, and skill bar animations without reaching for a single external library.</p>
+
+<p><strong>Responsive layout is straightforward.</strong> With <code class="language-plaintext highlighter-rouge">LayoutBuilder</code> and custom breakpoints, adapting the UI from mobile to desktop took minutes, not hours.</p>
+
+<h2 id="the-challenges">The Challenges</h2>
+
+<p>Flutter Web’s biggest weakness is <strong>SEO</strong>. The app renders inside a <code class="language-plaintext highlighter-rouge">&lt;canvas&gt;</code> element — search engine crawlers can’t index your text content easily. That’s exactly why this blog exists separately, as a plain Jekyll site. Important content lives here where Google can read it.</p>
+
+<p>Initial load time is another trade-off. The Wasm/CanvasKit bundle is large. I mitigate this with a loading screen, but it’s something to be aware of.</p>
+
+<h2 id="the-verdict">The Verdict</h2>
+
+<p>For a developer portfolio where you want to <strong>demonstrate Flutter skill</strong> and <strong>wow visitors visually</strong>, Flutter Web is a fantastic choice. Pair it with a statically-generated blog (like this one!) for SEO content, and you get the best of both worlds.</p>
+
+<hr />
+
+<p><em>Have questions about Flutter Web? Reach out at <a href="https://musawwer.is-a.dev">musawwer.is-a.dev</a> or open an issue on my GitHub.</em></p>
+
+  </div>
+
+  <footer class="post-footer">
+    <a href="/blog/" class="back-link">← All Posts</a>
+  </footer>
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Musawwer Rasheed · <a href="https://musawwer.is-a.dev">musawwer.is-a.dev</a></p>
+    </div>
+  </footer>
+</body>
+</html>
